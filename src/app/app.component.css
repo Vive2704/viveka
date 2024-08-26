@@ -1,0 +1,9 @@
+html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    background: url('/assets/solid-painted-concrete-wall-textured-backdrop.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  
