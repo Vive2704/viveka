@@ -1,7 +1,7 @@
 .projects {
     padding: 20px;
     display: grid;
-    margin-top: 100px;
+    margin-top: 70px;
     grid-template-columns: repeat(3, 1fr);
     /* Three columns with equal width */
     gap: 20px;
@@ -129,4 +129,32 @@
 
 .footers {
     margin-top: 80px;
+}
+
+.text-center {
+    text-align: center;
+    font-size: 2rem;
+    color: #000000;
+    animation: bounceIn 2s ease-out;
+}
+
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+
+    70% {
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
