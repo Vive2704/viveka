@@ -9,7 +9,8 @@ import { ContactComponent } from './contact/contact.component';
 import { ProjectComponent } from './project/project.component';
 import { FooterComponent } from './footer/footer.component';
 import { TopbarComponent } from './topbar/topbar.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 @NgModule({
@@ -26,6 +27,8 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    HttpClientModule,
+    ReactiveFormsModule
 
     
   ],

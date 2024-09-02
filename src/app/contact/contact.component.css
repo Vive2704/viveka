@@ -161,3 +161,34 @@
     transform: scale(1);
   }
 }
+
+.success-message {
+  color: green;
+  margin-top: 10px;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+}
+.custom-alert {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 5px;
+  z-index: 1000;
+  color: #fff;
+  font-size: 16px;
+  opacity: 0.9;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.success-alert {
+  background-color: green;
+}
+
+.error-alert {
+  background-color: red;
+}
