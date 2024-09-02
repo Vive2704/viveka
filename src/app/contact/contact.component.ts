@@ -28,6 +28,9 @@ export class ContactComponent implements OnInit {
           this.successMessage = 'Form Submitted Successfully';
           this.errorMessage = null;
           //console.log('Form submitted:', this.contactForm.value);
+          setTimeout(() => {
+            this.successMessage = null;
+        }, 3000);
         },
         error: (err) => {
           console.error('Error submitting form:', err);
