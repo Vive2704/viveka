@@ -17,4 +17,16 @@ export class ContactService {
 
     return this.http.post<any>(this.url, req, { headers });
   }
+
+ 
+  postResume(): Observable<Resumecount> {
+    const api="https://portfolio-1x2a.onrender.com/portfolio/resumeCount"
+    return this.http.post<Resumecount>(api, {});
+  }
+}
+
+
+export interface Resumecount {
+  id: number;
+  count: number;
 }
