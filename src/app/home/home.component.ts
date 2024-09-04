@@ -23,7 +23,7 @@ export class HomeComponent {
   incrementResumeCount() {
     this.portfolioService.postResume().subscribe(
       (response: Resumecount) => {
-        console.log('Resume count incremented:', response.count);
+       // console.log('Resume count incremented:', response.count);
       },
       (error) => {
         console.error('Error incrementing resume count:', error);
