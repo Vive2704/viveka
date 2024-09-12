@@ -1,40 +1,116 @@
-<div class="container">
-    <nav>
-        <div class="logo">SR<span></span></div>
-        <ul>
-            <li routerLink="">Home</li>
-            <li routerLink="project">Project</li>
-            <li routerLink="about">About</li>
-            <li routerLink="contact">Contact</li>
-        </ul>
-    </nav>
-    <!-- <br> -->
-    <h2 class="text-center">Welcome to My Portfolio</h2>
-    <br><br>
-    <div id="home" class="hero-content">
+<div class="container mt-5">
 
-        <div class="intro">
-            <p>Hello</p>
-            <h1>I'm <span>Sivaraaj</span></h1>
-            <h2>A full stack developer at <span style="color: orangered;">Oasys</span> based in Chennai.</h2>
-            <p>With expertise in Angular, Spring Boot, and MySQL & PostgreSQL, I build efficient and scalable solutions.
-                Here’s a
-                glimpse of my work:</p>
-            <br>
-            <!-- <h2>
-                ↓
-                RESUME
-            </h2> -->
 
-            <button class="button" (click)="downloadFile()">
-                <span class="button-content">RESUME</span>
-            </button>
-
-        </div>
-        <div class="hero-image">
-            <img src="assets/dev.png" alt="Developer Image">
+    <!-- Hero Section -->
+    <div class="container">
+        <nav>
+            <div class="logo">VV<span></span></div>
+            <ul>
+                <li routerLink="">Home</li>
+                <li routerLink="/" fragment="project">Project</li>
+                <li routerLink="/" fragment="about">About</li>
+                <li routerLink="/" fragment="contact">Contact</li>
+            </ul>
+        </nav>
+        <!-- <br> -->
+        <h2 class="text-center">Welcome to My Portfolio</h2>
+        <br><br>
+        <div id="home" class="hero-content">
+    
+            <div class="intro">
+                <p>Hello</p>
+                <h1>I'm <span>Sivaraaj</span></h1>
+                <h2>Pega developer at <span style="color: orangered;">cognizant technology solutions</span> based in Chennai.</h2>
+                <!-- <p>With expertise in Angular, Spring Boot, and MySQL & PostgreSQL, I build efficient and scalable solutions.
+                    Here’s a
+                    glimpse of my work:</p> -->
+                <br>
+                <!-- <h2>
+                    ↓
+                    RESUME
+                </h2> -->
+    
+                <button class="button" (click)="downloadFile()">
+                    <span class="button-content">RESUME</span>
+                </button>
+    
+            </div>
+            <div class="hero-image">
+                <img src="assets/port.png" alt="Developer Image">
+            </div>
         </div>
     </div>
+    <br>
+    <!-- <app-footer></app-footer> -->
+
+    <!-- Project Section -->
+    <div id="project" class="mt-5 p-4 bg-light rounded shadow-sm animate-fadeIn">
+        <h3 class="mb-3">Professional Experience</h3>
+        <p><strong>Cognizant Technology Solutions</strong> | 2022 - Present</p>
+        <p>
+            Currently working in the EIS Order Tracking Application (Verizon Business Group) as a Pega Developer with an experience of 1.9 years. 
+            I have good knowledge in creating and modifying various Flows, Flow Actions, Activities, Data Pages, Report Definitions, Declare expressions, 
+            and Sections using PRPC.
+        </p>
+        <p>
+            I am involved in unit testing, fixing application bugs to achieve the desired functionality, and have been debugging issues using tools 
+            like tracer, clipboard, and Live UI.
+        </p>
+        <p>
+            I also possess basic knowledge of Queue Processor, Job Scheduler, and Integrations, with hands-on experience working in Agile projects.
+            Additionally, I have been interacting with Business Analysts and team members to better understand and deliver on business requirements.
+        </p>
+    </div>
+
+<!-- About Section -->
+<div id="about" class="mt-5 p-4 bg-light rounded shadow-sm animate-fadeIn">
+    <h3 class="mb-3">About Me</h3>
+    <p>
+        I'm <strong>Viveka.V</strong>, a passionate and dedicated <strong>Pega Developer</strong> currently working at <strong>Cognizant Technology Solutions</strong>. 
+        I have been working in the <strong>EIS Order Tracking Application (Verizon Business Group)</strong> for over 1.9 years, where I have gained extensive knowledge in Pega 8.7, including creating and modifying flows, activities, report definitions, and handling various debugging tools like tracer and clipboard.
+    </p>
+    <p>
+        I have also completed a <strong>Pega Internship</strong> from June 2022 to October 2022, where I developed demo applications such as Facility Management and Gym Membership.
+        My technical skills include expertise in BPM technologies, especially Pega 8.7, along with hands-on experience in SQL, and a basic understanding of HTML and CSS. 
+        I am also <strong>Pega CSA and CSSA certified</strong>, which validates my proficiency in the platform.
+    </p>
+    <p>
+        Educationally, I have a <strong>B.Tech in Information Technology</strong> from <strong>CIET, Coimbatore</strong>, and I've consistently demonstrated strong academic performance with an 86.5% in my degree. 
+        Prior to that, I completed my HSC from Shri Amritha Higher Secondary School, Tirupathur, with an 81%, and my SSLC with 93.4%.
+    </p>
+    <p>
+        Besides my technical skills, I possess strong interpersonal and communication skills, adaptability, and a passion for learning new technologies. I have worked in Agile projects and interacted with business analysts to better understand the business requirements and provide efficient solutions.
+    </p>
+    <p>
+        I'm excited to continue growing in my career and take on new challenges in software development.
+    </p>
 </div>
-<br>
+
+
+    <!-- Contact Section -->
+    <div id="contact" class="mt-5 p-4 bg-light rounded shadow-sm animate-fadeIn">
+        <h3 class="mb-3">Reach Out</h3>
+        <p>If you would like to collaborate on a project or have any questions, feel free to reach out to me!</p>
+        <ul>
+            <li><strong>Email:</strong> <a href="mailto:vivekachithra2001@gmail.com">viveka@gmail.com</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/viveka-v-5801251b0" target="_blank">linkedin/viveka</a></li>
+            <!-- <li><strong>GitHub:</strong> <a href="https://github.com/sivaraaj" target="_blank">github.com/sivaraaj</a></li> -->
+        </ul>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="form-group mb-3">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name" formControlName="name" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Your Email" formControlName="mail" required>
+            </div>
+            <div class="form-group mb-3">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Your Message" formControlName="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" [disabled]="contactForm.invalid">Send Message</button>
+        </form>
+    </div>
+
 <app-footer></app-footer>

@@ -418,3 +418,256 @@ a {
         transform: scale(1);
     }
 }
+
+
+
+
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* General form styling */
+form {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Input field styling */
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255, 102, 0, 0.2);
+    outline: none;
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #ff6600;
+    border-color: #ff6600;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #333;
+    border-color: #333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    form {
+        padding: 15px;
+    }
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* About section styling */
+#about {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Heading styling */
+#about h3 {
+    font-size: 2rem;
+    color: #ff6600;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Paragraph text styling */
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Strong elements styling */
+#about strong {
+    color: #ff6600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #about {
+        padding: 20px;
+    }
+
+    #about h3 {
+        font-size: 1.75rem;
+    }
+
+    #about p {
+        font-size: 1rem;
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Project section styling */
+#project {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Heading styling */
+#project h3 {
+    font-size: 2rem;
+    color: #ff6600;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Job position and company styling */
+#project p strong {
+    color: #ff6600;
+    font-size: 1.2rem;
+}
+
+/* Paragraph text styling */
+#project p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    #project {
+        padding: 20px;
+    }
+
+    #project h3 {
+        font-size: 1.75rem;
+    }
+
+    #project p {
+        font-size: 1rem;
+    }
+
+    #project p strong {
+        font-size: 1.1rem;
+    }
+}
+
+
+/* Contact Details List */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+ul li strong {
+    color: #ff6600;
+    margin-right: 10px;
+    font-weight: bold;
+    min-width: 80px; /* Ensure labels are aligned */
+}
+
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+    transition: color 0.3s ease-in-out;
+}
+
+ul li a:hover {
+    color: #ff6600;
+}
+
+/* Phone number and non-link text styling */
+ul li span {
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    ul li {
+        font-size: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    ul li strong {
+        margin-bottom: 5px;
+    }
+}
+
